@@ -7,7 +7,7 @@
 ## 第一：limit num；
 
 下方是详细讲解的例子：
-```mysql
+```sql
 
 mysql> SELECT * FROM ratings ORDER BY category;
 +----+----------+--------+
@@ -43,7 +43,7 @@ mysql> SELECT * FROM ratings ORDER BY category LIMIT 5;
 
 举例：
 
-```mysql
+```sql
 mysql> SELECT * FROM ratings ORDER BY category;
 +----+----------+--------+
 | id | category | rating |
@@ -61,7 +61,7 @@ mysql> SELECT * FROM ratings ORDER BY category;
 
 1.LIMIT表示分页查询， LIMIT 0,4; 表示从索引为0的位置，就是第一个往后查4条数据。
 
-```mysql
+```sql
 mysql> SELECT * FROM ratings ORDER BY category LIMIT 0, 4;
 +----+----------+--------+
 | id | category | rating |
@@ -75,7 +75,7 @@ mysql> SELECT * FROM ratings ORDER BY category LIMIT 0, 4;
 
 2. LIMIT 3,3; 表示从索引为4的位置也就是第五条开始往后查8条数据。
 
-```mysql
+```sql
 mysql> SELECT * FROM ratings ORDER BY category LIMIT 3, 3;
 +----+----------+--------+
 | id | category | rating |
